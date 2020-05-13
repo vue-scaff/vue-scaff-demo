@@ -1,0 +1,93 @@
+/* Home */
+.home {
+  @include flex(column);
+
+  .logo {
+    height: 128px;
+    width: 128px;
+    outline: none;
+
+    &.effect {
+      animation: jello;
+      animation-duration: 1s;
+    }
+  }
+
+  .slogan {
+    padding: 24px 0;
+    background-image: linear-gradient(92deg, #0af, #0af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 12s infinite linear;
+  }
+
+  .jumbotron {
+    padding: 32px 0 64px;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .start {
+    padding: 32px 0;
+
+    &-text {
+      padding: 32px 0;
+      font-size: 24px;
+
+      // Test Sass Variable
+      color: $active;
+    }
+  }
+}
+
+/* Sample */
+.sample {
+  @include flex(column);
+
+  .bulletin,
+  .panel {
+    @include flex(column);
+  }
+
+  .bulletin {
+    width: 100%;
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+
+    &,
+    h1,
+    span {
+      transition: all 0.6s;
+    }
+
+    h1 {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    span {
+      height: 1px;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+  .panel {
+    flex: 3;
+    padding: 10% 0 10%;
+    @include flex(column);
+
+    li {
+      flex: 1;
+      @include flex;
+    }
+
+    button {
+      color: inherit;
+    }
+  }
+}

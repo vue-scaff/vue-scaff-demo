@@ -1,0 +1,20 @@
+/* Theme */
+$theme--color: #f63;
+
+$theme--light: #fff;
+$theme--dark: #202020;
+
+$bulletin-warm: #f7a;
+$bulletin-cold: #0af;
+
+$active: #f90;
+
+:export {
+  themeColor: $theme--color;
+
+  themeLight: $theme--light;
+  themeDark: $theme--dark;
+
+	bulletinWarm: $bulletin-warm;
+	bulletinCold: $bulletin-cold;
+}
