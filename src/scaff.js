@@ -18,34 +18,34 @@ export default App =>
   }).then(
     (
       // Subscript Face
-      { subscript },
+      { subscribe },
       // Runner
       next
     ) => {
-      subscript("util", config => {
+      subscribe("util", config => {
         console.log("UTIL MODULE : ", config);
       });
 
-      subscript("route", config => {
+      subscribe("route", config => {
         console.log("ROUTE CONFIGURE : ", config);
 
         config.mode = "history";
         config.baseRoute = process.env.publicPath;
       });
 
-      subscript("component", (config, model) => {
+      subscribe("component", (config, model) => {
         config.prefix = "x";
       });
 
-      subscript("request", ({ data, headers }) => {
+      subscribe("request", ({ data, headers }) => {
         data.token = "wechat: kazami500";
       });
 
-      subscript("response", config => {
+      subscribe("response", config => {
         console.log("HTTP Response : ", config);
       });
 
-      subscript("custom", config => {
+      subscribe("custom", config => {
         return {
           author: "joenix"
         };
