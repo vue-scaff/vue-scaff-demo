@@ -1,4 +1,4 @@
-export default $http => {
+export default ({ $http, $style, each }) => {
   const name = "global";
 
   const state = {

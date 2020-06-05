@@ -32,6 +32,11 @@ module.exports = {
       suffix: /\S+\/store.js$/
     },
 
+    filter: {
+      context: `@/filters`,
+      suffix: /.js$/
+    },
+
     component: {
       context: `@/components`,
       suffix: /.vue$/

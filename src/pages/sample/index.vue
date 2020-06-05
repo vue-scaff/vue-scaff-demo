@@ -73,12 +73,12 @@
 
 <script>
 export default {
+  mixins: [registry.mixin],
   data() {
     return {
       requestAddress: this.$api.mock("hello", "world", "honey")
     };
   },
-  mixins: [registry.mixin],
   components: {},
   methods: {
     doState() {

@@ -1,5 +1,5 @@
-export default ({ $http }) => {
-  console.log("$http: ", $http);
+export default ({ $http, $style, each }) => {
+  console.log(0, $http, $style, each);
 
   const name = "home";
 
