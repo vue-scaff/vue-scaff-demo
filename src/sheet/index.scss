@@ -12,3 +12,9 @@
 
 // Style
 @import "./style";
+
+// Prefers Scheme
+@media screen and (prefers-color-scheme: dark) {
+  // Dark
+  @import "./prefers";
+}

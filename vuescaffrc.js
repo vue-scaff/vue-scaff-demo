@@ -22,6 +22,11 @@ module.exports = {
       suffix: /.js$/
     },
 
+    filter: {
+      context: `@/filters`,
+      suffix: /.js$/
+    },
+
     route: {
       context: `@/pages`,
       suffix: /\S+\/route.js$/
@@ -30,11 +35,6 @@ module.exports = {
     store: {
       context: `@/pages`,
       suffix: /\S+\/store.js$/
-    },
-
-    filter: {
-      context: `@/filters`,
-      suffix: /.js$/
     },
 
     component: {
