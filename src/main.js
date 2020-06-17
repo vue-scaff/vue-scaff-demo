@@ -43,7 +43,7 @@ export default (
   });
 
   subscribe("response", config => {
-    console.log("HTTP Response : ", config);
+    config.success = ({ data }) => data;
   });
 
   subscribe("custom", config => {

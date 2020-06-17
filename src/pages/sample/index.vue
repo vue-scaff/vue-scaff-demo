@@ -68,6 +68,7 @@
         </button>
       </li>
     </ul>
+    {{ mockSource }}
   </div>
 </template>
 
@@ -76,7 +77,8 @@ export default {
   mixins: [registry.mixin],
   data() {
     return {
-      requestAddress: this.$api.mock("hello", "world", "honey")
+      requestAddress: this.$api.mock("hello"),
+      mockSource: {}
     };
   },
   components: {},
@@ -99,12 +101,13 @@ export default {
       this.$util.sleep(1200).then(() => (this.home.name = data));
     }
   },
-  mounted() {
-    this.$http(this.requestAddress)
-      .get({ a: 1, b: 2, c: 3 }, { headerParams: "header-params" })
-      .then(response => {
-        console.log("http response is : ", response);
-      });
+  async mounted() {
+    const data = await this.$http(this.requestAddress).get(
+      { a: 1, b: 2, c: 3 },
+      { headerParams: "header-params" }
+    );
+
+    this.mockSource = data.object;
   }
 };
 </script>
