@@ -8,6 +8,10 @@ module.exports = {
     app: `/App.vue`
   },
 
+  mock: true,
+
+  px2rem: 10,
+
   registry: {
     host: true,
     api: true,

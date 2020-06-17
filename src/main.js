@@ -34,6 +34,10 @@ export default (
     config.prefix = "x";
   });
 
+  subscribe("filter", (config, model) => {
+    console.log("FILTER MODULES", config, model);
+  });
+
   subscribe("request", ({ data, headers }) => {
     data.token = "wechat: kazami500";
   });
