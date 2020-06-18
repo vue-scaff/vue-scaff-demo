@@ -9,7 +9,7 @@
         @click="camera"
       />
       <div class="slogan">
-        <h1>{{ $t("hello") }} Vue Scaff</h1>
+        <h1>{{ $t("hello") | combination }}</h1>
         <span>= Next Engineering Scaffold =</span>
       </div>
     </div>
