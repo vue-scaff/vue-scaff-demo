@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.df88b699c6d46c43bfd127d6c4e00087.js"
+  "/vue-scaff-demo/precache-manifest.0cdb27fa474342d8f30b539e5322815b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "@scaff/vue-scaff-demo"});
