@@ -10,7 +10,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@scaff/vue-cli-scaff": "^5.2.10",
+    "@scaff/vue-cli-scaff": "^5.2.12",
     "core-js": "^3.3.2",
     "register-service-worker": "^1.6.2"
   },

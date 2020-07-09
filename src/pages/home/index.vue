@@ -10,7 +10,7 @@
       />
       <div class="slogan">
         <h1>{{ $t("hello") | combination }}</h1>
-        <span>= Next Engineering Scaffold =</span>
+        <span>= Next Vue-Engineering Scaffold =</span>
       </div>
     </div>
 
