@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65b216faa98939e66ffd",
+    "revision": "51e8beaead6acb9a8823",
     "url": "/vue-scaff-demo/css/app.f0b402ad.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/vue-scaff-demo/img/logo.9ff5f675.png"
   },
   {
-    "revision": "c21dbc24a953ef0a8dc19921f579e937",
+    "revision": "d5dd95e0b0235c323ba6fd75b747a940",
     "url": "/vue-scaff-demo/index.html"
   },
   {
-    "revision": "65b216faa98939e66ffd",
-    "url": "/vue-scaff-demo/js/app.1a3dea9b.js"
+    "revision": "51e8beaead6acb9a8823",
+    "url": "/vue-scaff-demo/js/app.0098b737.js"
   },
   {
     "revision": "08df2c014cf0187839b7",

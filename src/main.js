@@ -20,7 +20,7 @@ export default (
     console.log("ROUTE CONFIGURE : ", config);
 
     config.mode = "history";
-    config.baseRoute = process.env.publicPath;
+    config.base = process.env.publicPath;
   });
 
   subscribe("store", (config, model) => {
